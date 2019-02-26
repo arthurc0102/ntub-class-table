@@ -66,7 +66,7 @@ export class ClassTableComponent implements OnInit {
       });
 
       this.data = data;
-      console.log(data)
+      console.log(data);
     });
   }
 
