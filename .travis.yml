@@ -9,7 +9,7 @@ script:
   - echo "skipping tests"
 before_deploy:
   - yarn run build --prod
-  - cp ./CNAME ./dist/CNAME
+  - cp ./CNAME ./dist/ntub-class-table/CNAME
 deploy:
   provider: pages
   skip_cleanup: true
