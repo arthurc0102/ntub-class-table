@@ -1,0 +1,36 @@
+<h2>{{stdNo}} 的課表</h2>
+<hr>
+
+<p *ngIf="!data" id="loading">載入中......</p>
+
+<div *ngIf="data">
+  <p-table [columns]="cols" [frozenColumns]="frozenCols" [value]="data" [scrollable]="true" scrollHeight="75vh" frozenWidth="150px">
+    <ng-template pTemplate="colgroup" let-columns>
+      <colgroup>
+        <col *ngFor="let col of columns" style="width: 150px;">
+      </colgroup>
+    </ng-template>
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col.header}}
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-d let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns">
+          <span *ngIf="col.field === 'time'">
+            <p>{{d.time.class_no}}</p>
+            <p *ngIf="d.time.start_at">{{d.time.start_at}} - {{d.time.end_at}}</p>
+          </span>
+          <span *ngIf="col.field !== 'time' && d[col.field]">
+            <p>{{d[col.field].name}}</p>
+            <p>{{d[col.field].room}}</p>
+            <p>{{d[col.field].teacher}}</p>
+          </span>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

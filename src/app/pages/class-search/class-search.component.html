@@ -1,0 +1,15 @@
+<div class="p-grid">
+  <div class="p-col-12 p-md-8 p-lg-6 p-md-offset-2 p-lg-offset-3">
+    <h2>北商個人課表</h2>
+
+    <p-overlayPanel #op>{{message}}</p-overlayPanel>
+
+    <div class="ui-inputgroup">
+      <input pInputText type="text" placeholder="學號"
+         style="width: 100%" #stdNo
+         (keyup.enter)="search($event, stdNo.value, op); stdNo.value = ''">
+      <button pButton type="button" icon="pi pi-search" class="ui-button-warn"
+        (click)="search($event, stdNo.value, op); stdNo.value = ''"></button>
+    </div>
+  </div>
+</div>

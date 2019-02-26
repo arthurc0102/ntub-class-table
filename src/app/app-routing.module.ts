@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, Routes, RouterModule } from '@angular/router';
-import { RootComponent } from './pages/root/root.component';
+import { ClassSearchComponent } from './pages/class-search/class-search.component';
+import { ClassTableComponent } from './pages/class-table/class-table.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: RootComponent,
+    path: 'class-search',
+    component: ClassSearchComponent,
   },
+  {
+    path: 'class/:stdNo',
+    component: ClassTableComponent,
+  },
+
+  {path: '', pathMatch: 'full', redirectTo: 'class-search'},
+  {path: '**', redirectTo: 'class-search'},
 ];
 
 const config: ExtraOptions = {
