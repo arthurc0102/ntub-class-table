@@ -100,7 +100,7 @@
     "@angular-devkit/core" "7.3.3"
     rxjs "6.3.3"
 
-"@angular/animations@~7.2.0":
+"@angular/animations@^7.2.6":
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-7.2.6.tgz#5153d68da7f7dd08e26490f72f97679a93e78f34"
   integrity sha512-ICKPS+bKabhQNqnPoVZegUAhgNPbVFlrxHoJ+ZZeVGxw5iBE8TnP3a2sRvakdMTKhykDlwVVGMKLxu2Y34uhmg==
@@ -5128,6 +5128,16 @@ postcss@7.0.14, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.13:
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+primeicons@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-1.0.0.tgz#90061f168ef6227f21f0a7db8204ffa85cd27aec"
+  integrity sha512-p/hzIjUVccW4eJPhuORHI3AUkDpqfvCQVrjxbFEejnTEdWY4C8fomVfjiaA9jCu83fSQnBHuRIGB96iAR8R6uA==
+
+primeng@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-7.0.5.tgz#9a2e5921a7dcdd0052e99e11f7d23ea1953d155b"
+  integrity sha512-CVc6XxMZEsuCKXkyLUI/bRKX+spSBnEwqOFnAeXfSjIq0Uok51Dnrn8yNHyAWU2YRx93h7NWgxBtSXWVddEwqg==
 
 process-nextick-args@~2.0.0:
   version "2.0.0"

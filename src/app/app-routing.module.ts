@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, Routes, RouterModule } from '@angular/router';
+import { RootComponent } from './pages/root/root.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: RootComponent,
+  },
+];
 
 const config: ExtraOptions = {
   useHash: true,
