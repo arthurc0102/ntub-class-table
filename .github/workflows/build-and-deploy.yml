@@ -16,8 +16,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 8.x
-      - name: Build
-        run: yarn run build --prod
+      - name: Install & Build
+        run: yarn && yarn run build --prod
       - name: Copy CNAME
         run: cp ./CNAME ./dist/ntub-class-table/CNAME
       - uses: actions/upload-pages-artifact@v1
