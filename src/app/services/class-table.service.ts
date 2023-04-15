@@ -9,7 +9,7 @@ import { ClassTable } from '../models/classTable';
 })
 export class ClassTableService {
 
-  private server = 'https://ntub-class.herokuapp.com/personal';
+  private server = 'https://api.ntub-class.arthurc.me/personal';
 
   constructor(private http: HttpClient) { }
 
